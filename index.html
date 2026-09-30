@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Sistem Informasi Data Mahasiswa - Praktikum 1 - PPW C</h1>
+        <p>Detail singkat tentang website</p>
+        <img src="Pas Foto Almet.jpg" alt="" width="200" height="200">
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="#informasi">Informasi Aplikasi</a></li>
+                <li><a href="#daftar-mahasiswa">Daftar Mahasiswa</a></li>
+                <li><a href="#form-tambah">Tambah Mahasiswa Baru</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <main>
+            <section id="informasi">
+                <h2>Informasi Sistem</h2>
+                <p>Ini bagian informasi sistem</p>
+                <article>
+                    <h3>Ini adalah bagian dari tag article</h3>
+                    <p>Ini paragraf bagian article</p>
+                </article>
+            </section>
+            <hr>
+            <section id="daftar-mahasiswa">
+                <h2>Daftar Mahasiswa Aktif</h2>
+                <p>Berikut daftarnya:</p>
+                <table border="1" cellpadding = "8" cellspacing = "0">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Foto</th>
+                            <th>NPM</th>
+                            <th>Nama Lengkap</th>
+                            <th>Program Studi</th>
+                            <th>Angkatan</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="labubu.jpeg" alt="" width="100" height="100"></td>
+                            <td>2415061001</td>
+                            <td>Labubu</td>
+                            <td>Teknik Mesin</td>
+                            <td>2026</td>
+                            <td>labubu@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="logogl.png" alt="" width="100" height="100"></td>
+                            <td>2415061002</td>
+                            <td>Gallery Lampung</td>
+                            <td>Teknik Arsitektur</td>
+                            <td>2026</td>
+                            <td>gallery@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img src="logonp.jpeg" alt="" width="100" height="100"></td>
+                            <td>2415061003</td>
+                            <td>PLN</td>
+                            <td>Teknik Elektro</td>
+                            <td>2026</td>
+                            <td>pln@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section id="form-tambah">
+                <h2>Tambah Mahasiswa Baru</h2>
+                <p>Ini untuk menambhakan mahasiswa baru</p>
+                <form action="" method="post">
+                    <fieldset>
+                        <legend></legend>
+                        <p>
+                            <label for="npm">Nomor Pokok Mahasiswa (NPM)</label><br>
+                            <input type="text" name="npm" id="npm" placeholder="2415061005" required pattern="[0-9]{8,12}" title="NPM harus berupa angka 8-12 digit"><br>
+                            <small>Untuk input NPM</small>
+                        </p>
+                        <p>
+                            <label for="nama">Nama Lengkap</label><br>
+                            <input type="text" name="nama" id="nama" placeholder="Contoh : M. Sidiq Firdaus" required minlength="3" maxlength="100"><br>
+                            <small>Untuk input Nama</small>
+                        </p>
+                        <p>
+                            <label for="program_studi">Program Studi</label><br>
+                            <select name="program_studi" id="program_studi" required>
+                                <option value="">Program Studi</option>
+                                <option value="Teknik Informatika">Teknik Informatika</option>
+                            </select><br>
+                            <small>Input Program Studi</small>
+                        </p>
+                        <p>
+                           <label for="angkatan">Angkatan</label><br>
+                            <input type="number" name="angkatan" id="angkatan" placeholder="Contoh : 2024" minlength="2018" maxlength="2026"><br>
+                            <small>Untuk input Angkatan</small> 
+                        </p>
+                        <p><label for="email">Alamat Email:</label><br>
+                            <input type="email" name="email" id="email" placeholder="Contoh : email@example.com" required><br>
+                            <small>Untuk input Email</small></p>
+                        <p>
+                            <button type="submit">Simpan Data Mahasiswa</button>
+                            <button type="reset">Reset Formulir</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </header>
+</body>
+</html>
+
